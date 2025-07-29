@@ -1,0 +1,13 @@
+{
+  "name": "ascii-viewer",
+  "version": "1.0.0",
+  "description": "ASCII STL Viewer with Parcel",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --dist-dir dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0",
+    "three": "^0.158.0"
+  }
+}

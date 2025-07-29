@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+.parcel-cache/
+.cache/
+
+# Output build
+dist/
+
+# System files
+.DS_Store
+
+# Environment
+.env
