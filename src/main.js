@@ -56,7 +56,7 @@ loader.load(modelURL, (geometry) => {
 function animate() {
   requestAnimationFrame(animate);
   if (mesh) {
-    mesh.rotation.z += 0.002; // only Z-axis rotation
+    mesh.rotation.z += 0.001; // only Z-axis rotation
   }
   effect.render(scene, camera);
 }
