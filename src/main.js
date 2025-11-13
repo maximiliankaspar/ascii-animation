@@ -40,7 +40,7 @@ loader.load(modelURL, (geometry) => {
   const offsetX = (boundingBox.max.x + boundingBox.min.x) / 2;
   const offsetY = (boundingBox.max.y + boundingBox.min.y) / 2;
   const height = boundingBox.max.z - boundingBox.min.z;
-  const offsetZ = boundingBox.min.z + height / 1.7;
+  const offsetZ = boundingBox.min.z + height / 3;
 
   geometry.translate(-offsetX, -offsetY, -offsetZ);
 
