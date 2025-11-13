@@ -40,7 +40,7 @@ loader.load(modelURL, (geometry) => {
   const offsetX = (boundingBox.max.x + boundingBox.min.x) / 2;
   const offsetY = (boundingBox.max.y + boundingBox.min.y) / 2;
   const height = boundingBox.max.z - boundingBox.min.z;
-  const offsetZ = boundingBox.min.z + height / 3;
+  const offsetZ = boundingBox.min.z + height / 1.7;
 
   geometry.translate(-offsetX, -offsetY, -offsetZ);
 
@@ -56,7 +56,7 @@ loader.load(modelURL, (geometry) => {
 function animate() {
   requestAnimationFrame(animate);
   if (mesh) {
-    mesh.rotation.z += 0.005; // only Z-axis rotation
+    mesh.rotation.z += 0.002; // only Z-axis rotation
   }
   effect.render(scene, camera);
 }
